@@ -1,0 +1,119 @@
+@charset "UTF-8";
+/* This is the only CSS that is different accross the brands */
+
+@font-face {
+    font-family: 'club_bold';
+    font-style: normal;
+    font-weight: normal;
+	src:	url('../fonts/skodapro-bold-webfont.eot'); /* IE9 Compat Modes */
+	src:	url('../fonts/skodapro-bold-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+			url('../fonts/skodapro-bold-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+			url('../fonts/skodapro-bold-webfont.svg') format('svg'); /* Legacy iOS */
+
+}
+@font-face {
+    font-family: 'club_normal';
+    font-style: normal;
+    font-weight: normal;
+	src:	url('../fonts/skodapro-regular-webfont.eot'); /* IE9 Compat Modes */
+	src:	url('../fonts/skodapro-regular-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+			url('../fonts/skodapro-regular-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+			url('../fonts/skodapro-regular-webfont.svg') format('svg'); /* Legacy iOS */
+}
+.simple_second_carousel_indicators .active {
+    background-color: #4ba82e;
+}
+.navbar-toggler div, #navbarToggleExternalContent.collapse {
+    background-color: #000;
+}
+button polygon {
+	fill:#000;
+}
+header .sytner polygon {
+	fill:#4ba82e;
+}
+header .brand_logo span {
+    background-image: url(../images/skoda_logo_white.png);
+	height: 50px;
+    width: 250px;
+}
+header .club_title a{
+    color: #fff;
+    font-size: 30pt;
+    line-height: 1em;
+}
+header .brand_logo {
+    padding: 25px;
+}
+header .club_title {
+    padding-top: 30px;
+}
+header .logos {
+    background-color: #4ba82e;
+}
+.legal {
+    border-top-color: #000;
+}
+.top {
+    border-bottom-color: #000;
+}
+footer, footer a {
+    color: #000;
+}
+footer {
+    background-color: #fff;
+}
+.menu-word {
+    font-size: 15px;
+}
+.menu-item a {
+	font-size: 14px;
+}
+.welcome, .news1, .news2 {
+	font-size: 1rem;
+}
+.grid-tile__title, footer h2 {
+    font-size: 20px;
+}
+@media only screen and (min-width: 1200px) {
+.grid-tile__title {
+    font-size: 28px;
+}
+}
+
+/* mobiles
+-------------------------------------------------------------- */
+@media only screen and (max-width: 700px) {
+header .sytner, header .brand_logo, header .club_title, header .logos {
+    height: 66px;
+}
+header .brand_logo span {
+    background-image: url(../images/skoda_logo.png);
+	height: 30px;
+    width: 145px;
+}
+header .club_title a {
+	font-size: 15pt;
+	line-height: 1.2em;
+}
+header .club_title {
+	padding-top: 22px;
+    float: left;
+    padding-left: 45px;
+	background-image: url(../images/diagonal.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: auto 100%;
+    min-width: 55px;
+	margin-left: 180px; 
+}
+.grid-tile__title, .simple_second_carousel_caption h2 {
+    font-size: 20px !important;
+}
+header .brand_logo {
+	background-color: #fff;
+	padding: 18px;
+	width: 180px;
+}
+
+}

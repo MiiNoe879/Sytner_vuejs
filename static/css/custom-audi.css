@@ -1,0 +1,102 @@
+@charset "UTF-8";
+/* This is the only CSS that is different accross the brands */
+
+@font-face {
+    font-family: 'club_bold';
+    font-weight: normal;
+    src: url('../fonts/audiType_extended_bold.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/audiType_extended_bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */  
+		 url('../fonts/audiType_extended_bold.woff') format('woff'), /* Pretty Modern Browsers */  
+		 url('../fonts/audiType_extended_bold.ttf') format('truetype'), /* Safari, Android, iOS */  
+		 url('../fonts/audiType_extended_bold.svg#audiType') format('svg'); /* Legacy iOS */
+}
+@font-face {
+    font-family: 'club_normal';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/audiType_normal.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/audiType_normal.woff') format('woff'), /* Pretty Modern Browsers */  
+		 url('../fonts/audiType_normal.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+.navbar-toggler div, .simple_second_carousel_indicators .active, #navbarToggleExternalContent.collapse {
+    background-color: #bb0a30;
+}
+button polygon {
+	fill:#bb0a30;
+}
+header .sytner polygon {
+	fill:#000;
+}
+header .brand_logo span {
+    background-image: url(../images/audi_rings.svg);
+    height: 40px;
+    width: 116px;
+}
+header .club_title a {
+    color: #fff;
+    font-size: 32pt;
+    line-height: 1em;
+}
+header .brand_logo {
+    padding: 30px;
+}
+header .club_title {
+    padding-top: 30px;
+}
+header .logos {
+    background-color: #000;
+}
+.legal {
+    border-top-color: #fff;
+}
+.top {
+    border-bottom-color: #fff;
+}
+footer, footer a {
+    color: #fff;
+}
+footer {
+    background-color: #000;
+}
+.grid-tile__title {
+    font-size: 15px;
+}
+.grid-tile__description {
+    font-size: 17px;
+}
+@media only screen and (min-width: 1200px) {
+.grid-tile__title {
+    font-size: 22px;
+}
+}
+/* mobiles
+-------------------------------------------------------------- */
+@media only screen and (max-width: 700px) {
+header .brand_logo {
+    padding: 15px;
+}
+header .club_title {
+    padding-top: 15px;
+}
+header .sytner, header .brand_logo, header .club_title, header .logos {
+    height: 70px;
+}
+header .club_title {
+    padding-left: 0;
+}
+header .brand_logo span {
+    height: 26px;
+    width: 80px;
+}
+header .club_title a {
+	margin-left: 110px;
+}
+header .club_title a {
+    font-size: 20pt;
+	line-height: 1.2em;
+}
+.grid-tile__title {
+    font-size: 16px;
+}
+}

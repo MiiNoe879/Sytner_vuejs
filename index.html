@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Audi Club</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <script src="/static/js/jquery.min.js"></script>
+    <!--bootstrap color picker inclusion-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-colorpicker/2.5.1/css/bootstrap-colorpicker.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-colorpicker/2.5.1/js/bootstrap-colorpicker.min.js"></script>
+      <!--icons sets below-->
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet" />
+      <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+
+    <!--alertify related-->
+    <!-- JavaScript -->
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.11.1/build/alertify.min.js"></script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.1/build/css/alertify.min.css"/>
+    <!-- Bootstrap theme -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+    <link href="/static/css/custom-club.css" rel="stylesheet" type="text/css">
+	  <link href="/static/css/custom-audi.css" rel="stylesheet" type="text/css">
+    <link href="/static/css/jquery.fullPage.css" rel="stylesheet" type="text/css">
+    <link href="/static/css/simple_second_carousel.css" rel="stylesheet" media="all">
+    <script src="/static/js/jquery.fullPage.js"></script>
+    <!-- <script src="/static/js/custom.js"></script> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="/static/js/jquery.touchSwipe.min.js"></script>
+    <script src="/static/js/responsive_bootstrap_carousel.js"></script>
+
+    <script src="/static/js/jquery.nicescroll.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.js"></script>
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/geolocator/2.1.3/geolocator.min.js"></script>
+    
+    <style>
+      ul {
+        margin-bottom: 0 !important;
+      }
+      .form-group {
+        margin-bottom: 0 !important;
+      }
+    </style>
+    <script>
+      $(function() {  
+        $("body").niceScroll({horizrailenabled:false});
+        function onElementHeightChange(elm, callback){
+          var lastHeight = elm.clientHeight, newHeight;
+          (function run(){
+              newHeight = elm.clientHeight;
+              if( lastHeight != newHeight )
+                  callback();
+              lastHeight = newHeight;
+
+              if( elm.onElementHeightChangeTimer )
+                  clearTimeout(elm.onElementHeightChangeTimer);
+
+              elm.onElementHeightChangeTimer = setTimeout(run, 200);
+          })();
+        }
+        onElementHeightChange(document.body, function(){
+          $("body").getNiceScroll().resize()
+        });
+      });
+    </script>
+
+    <link href="/static/common.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div id="fullpage" class="container-fluid"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
